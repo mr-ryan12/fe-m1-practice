@@ -8,10 +8,15 @@
 
   Answer these questions about the reading in your `day2-exercises.md` file:
 
-  1.  There are three main types of lists in HTML: ordered, unordered, and definition. What are their differences?
-  2.  What is the basic structure of an element used to link to another website?
-  3.  What attribute should you include in a link to open a new tab when the link is clicked?
-  4.  How do you link to a specific part of the same page?
+  1.  There are three main types of lists in HTML: ordered, unordered, and definition. What are their differences?  
+  Ordered lists will add a list of numbers in numerical order to the content. Unordered lists include bullet points and do not represent an ordered structure of elements. Definition lists include a definition title and the actual definition displayed underneath it. 
+  2.  What is the basic structure of an element used to link to another website?  
+  `<a href="http://www.example.com" target="_blank">Example</a>`
+  3.  What attribute should you include in a link to open a new tab when the link is clicked?  
+  `target="_blank"`
+  4.  How do you link to a specific part of the same page?  
+  An id must be assigned to the element you want to reference. Then set an anchor tag with its value the same same as the id of the element preceded by a hash symbol.  
+  `<a href="#some-id-name">Link to Section</a>`
 
   With the page you created in CodePen on Day 1 (that included Structure and Text), add to it:
 
@@ -23,13 +28,29 @@
 
   Answer these questions about the reading in your `day2-exercises.md`:
 
-  1.  What is the purpose of CSS?
-  2.  What does CSS stand for? What does cascading mean in this case?
-  3.  What is the basic structure of a CSS rule?
-  4.  How do you link a CSS stylesheet to your HTML document?
-  5.  When is it useful to use external stylesheets as opposed to using interal CSS?
-  6.  Describe what a color hex code is.
-  7.  What are the three parts of an HSL color property?
+  1.  What is the purpose of CSS?  
+  Adds styling to the webpage
+  2.  What does CSS stand for? What does cascading mean in this case?  
+  Cascading Style sheet. Instructions are executed in the order they are placed in the file from top to bottom
+  3.  What is the basic structure of a CSS rule?  
+  ```css
+  h1 {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: blue;
+  }
+  ```
+  4.  How do you link a CSS stylesheet to your HTML document?  
+  `<link href="css/stylesheet.css" type="text/css" rel="stylesheet">`  
+  Make sure this is placed between the `<head>` tags
+  5.  When is it useful to use external stylesheets as opposed to using interal CSS?  
+  It's best to use external stylesheets if there is a significant amount of styling applied to the webpage. This keeps the HTML file relatively uncluttered with CSS code and makes it easier to read.
+
+  6.  Describe what a color hex code is.  
+  It is a six-digit code that represents the amount of red, green and blue in a color preceded by a hash symbol.
+  7.  What are the three parts of an HSL color property?  
+  Hue, saturation, lightness
   8.  In the world of typeface, what are the three main categories of fonts? What are the differences between them?
   9.  When specifiying font-size, what are the main three units used?
 
